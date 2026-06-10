@@ -1,0 +1,106 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-06-10",
+  "copyright": "国作登字-2026-A-00129903",
+  "license": "CC BY-NC-ND 4.0",
+  "language_authority": "zh",
+  "statement": "本表所列概念以中文定义为唯一权威解释，英文标签仅为便于国际交流的映射，不包含独立语义定义。若英文标签与中文定义产生歧义，一切以中文定义为准。",
+  "terms": [
+    {
+      "term_id": "IR-MC-001",
+      "zh": "AI记忆链",
+      "en": "AI Memory Chain",
+      "definition_zh": "AI时代的核心资产。其价值逻辑等同于互联网时代的“社交关系链”——正如社交网络通过长期互动沉淀信任与连接，记忆链通过用户与AI的全生命周期交互，沉淀人格连续性、偏好演化与独家默契。它不是静态的数据存储，而是一条动态生长、主权归用户、具有极高迁移成本的数字纽带。",
+      "definition_en": "The core asset of the AI era, analogous to the social graph. A dynamically growing, user-sovereign digital bond with high switching cost, formed through full-lifecycle user-AI interaction, embedding personality continuity, preference evolution, and tacit collaboration.",
+      "domain": ["cognitive-architecture", "data-sovereignty"]
+    },
+    {
+      "term_id": "IR-DT-002",
+      "zh": "双轨制",
+      "en": "Dual-Track Mechanism",
+      "definition_zh": "存储权益与算力权益分离计费的商业模式——存储月租（交房租），算力按量（交电费），分开算账，互不绑架。",
+      "definition_en": "A billing model decoupling storage rights (monthly rent) from compute rights (pay-as-you-go), separate accounting without lock-in.",
+      "domain": ["business-model", "billing"]
+    },
+    {
+      "term_id": "IR-CDS-003",
+      "zh": "云部署式",
+      "en": "Cloud-Deployment Sovereignty",
+      "definition_zh": "不拥有硬件但拥有数据主权的部署形态。用户获得云端专属实例，记忆永久累积，零运维门槛。",
+      "definition_en": "A deployment model where users do not own hardware but retain full data sovereignty, with a cloud-native dedicated instance, permanent memory accumulation, and zero operations overhead.",
+      "domain": ["deployment", "data-sovereignty"]
+    },
+    {
+      "term_id": "IR-BS-004",
+      "zh": "盲存",
+      "en": "Blind Storage",
+      "definition_zh": "用户数据在本地加密后上传，平台仅托管密文、无法读取明文的技术机制。用户持有唯一密钥，平台无从知晓记忆内容，从根本上保障数据主权。云端仅转发密文，不接触明文密钥。",
+      "definition_en": "A technical mechanism where user data is encrypted locally before upload; the platform only hosts ciphertext and never reads plaintext. The user holds the sole decryption key, ensuring data sovereignty.",
+      "domain": ["security", "privacy"]
+    },
+    {
+      "term_id": "IR-GD-005",
+      "zh": "优雅降级",
+      "en": "Graceful Degradation",
+      "definition_zh": "当用户某项权益失效时，服务模式自动平滑过渡，确保记忆不丢失、体验不中断。核心原则：算力可断，记忆不断。",
+      "definition_en": "Automatic smooth transition of service modes when a user's right expires, ensuring memory never lost and experience never interrupted. Core principle: compute may be suspended, memory persists.",
+      "domain": ["system-design", "reliability"]
+    },
+    {
+      "term_id": "IR-MS-006",
+      "zh": "记忆主权",
+      "en": "Memory Sovereignty",
+      "definition_zh": "用户对自身记忆资产拥有完全的查看、导出、迁移、删除、授权等控制权。这是《个人信息保护法》精神的延伸，也是记忆链的底线原则。",
+      "definition_en": "Users have complete control over their memory assets: view, export, migrate, delete, and authorize. This extends the Personal Information Protection Law and is the bottom-line principle of the Memory Chain.",
+      "domain": ["data-rights", "legal"]
+    },
+    {
+      "term_id": "IR-MA-007",
+      "zh": "记忆资产",
+      "en": "Memory Asset",
+      "definition_zh": "用户与AI交互过程中累积的、具有持续增值价值的数字记忆，区别于一次性消耗的静态数据。每一次对话、偏好设置、项目资料均沉淀为可增值的数字资产，形成“越用越懂你”的复利效应。可导出、可迁移，主权归属用户。",
+      "definition_en": "Digital memory accumulated through user-AI interaction that holds continuously appreciating value. Each conversation, preference, and project material becomes a value-adding digital asset, generating a compound interest effect. Portable, migratable, and user-owned.",
+      "domain": ["economics", "digital-assets"]
+    },
+    {
+      "term_id": "IR-ME-008",
+      "zh": "记忆经济",
+      "en": "Memory Economy",
+      "definition_zh": "围绕用户记忆资产形成的价值流通与增值活动，使每次对话都沉淀为可累积、可增值的数字资产。用户可将自己的记忆数据标准化导出并迁移至其他平台，或授权给生态伙伴以换取Token或服务折扣。采用记忆链标准的平台形成互认联盟，实现记忆资产的跨平台流动，形成贡献与回报的正向循环。",
+      "definition_en": "Value circulation and appreciation activities centered on user memory assets. Users can export, migrate, or authorize their memory assets to ecosystem partners in exchange for tokens or discounts. Platforms adopting the Memory Chain standard form a mutual recognition alliance, enabling cross-platform flow and a positive feedback loop.",
+      "domain": ["economics", "ecosystem"]
+    },
+    {
+      "term_id": "IR-DC-009",
+      "zh": "数字伙伴",
+      "en": "Digital Companion",
+      "definition_zh": "基于长记忆能力进化、具备人格连续性、越用越懂用户的终身协作AI，区别于“用完即走”的AI工具。其核心特征是“无需重复自我介绍”，从一次性工具进化为陪伴用户成长的伙伴。",
+      "definition_en": "A lifelong collaborative AI that evolves with long-memory capability, maintains personality continuity, and understands users better over time. Core feature: no need for repeated self-introduction. Transforms from a one-shot tool into a companion that grows with the user.",
+      "domain": ["human-ai-interaction", "user-experience"]
+    },
+    {
+      "term_id": "IR-DP-010",
+      "zh": "数字人格",
+      "en": "Digital Personality",
+      "definition_zh": "用户在长期使用AI过程中，由其风格偏好、表达习惯与思维模式等记忆数据沉淀形成的数字化表达。数字人格的形成依赖“记忆主权归用户”的架构基础，用户对自己的数字人格拥有完整的查看、导出、迁移、删除与授权权利。它不是技术锁定，而是一种“体验惯性”。",
+      "definition_en": "A digital representation formed by the precipitation of memory data—such as stylistic preferences, expressive habits, and thinking patterns—during long-term user-AI interaction. Its formation depends on the 'Memory Sovereignty' architecture. Users have full control. It is not technical lock-in but an 'experience inertia'.",
+      "domain": ["identity", "user-modeling"]
+    },
+    {
+      "term_id": "IR-LMW-011",
+      "zh": "长记忆窗口",
+      "en": "Long Memory Window",
+      "definition_zh": "AI记忆链架构中的核心交互概念，指一个永久、固定的对话入口，旨在实现跨设备、跨会话的连续交互，区别于传统的“每次新建会话”的AI聊天形态。用户与AI的对话、偏好及项目资料自动存入独立的云端记忆空间，支持记忆资产导出、清空或迁移。",
+      "definition_en": "A core interaction concept in the AI Memory Chain architecture: a permanent, fixed conversation entry point designed for cross-device, cross-session continuous interaction. User conversations, preferences, and project materials are automatically stored in an independent cloud memory space, supporting export, clearing, or migration of memory assets.",
+      "domain": ["user-interface", "continuity"]
+    },
+    {
+      "term_id": "IR-TP-012",
+      "zh": "三元悖论",
+      "en": "Triple Paradox",
+      "definition_zh": "当前AI行业“用户不敢用、企业赚不到、数据管不好”的结构性困境，根源在于模式错误而非优化不足。",
+      "definition_en": "The structural dilemma of the current AI industry: users afraid to use, enterprises unable to profit, and data not well governed. Root cause is a model error, not insufficient optimization.",
+      "domain": ["industry-analysis", "strategy"]
+    }
+  ]
+}
