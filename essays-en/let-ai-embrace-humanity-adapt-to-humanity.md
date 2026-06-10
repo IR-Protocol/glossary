@@ -1,5 +1,3 @@
----
-
 # Let AI Embrace Humanity, Let AI Adapt to Humanity
 
 ## One-Liner
