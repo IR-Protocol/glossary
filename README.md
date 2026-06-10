@@ -42,6 +42,7 @@
 - 📄 中文白皮书：[whitepapers-zh](https://github.com/IR-Protocol/whitepapers-zh)
 - 📄 英文白皮书：[whitepapers-en](https://github.com/IR-Protocol/whitepapers-en)
 - ✍️ 英文随笔：[essays-en/](https://github.com/IR-Protocol/glossary/tree/main/essays-en)
+- 📄 英文文章：[articles-en/](https://github.com/IR-Protocol/glossary/tree/main/articles-en)
 
 ---
 
