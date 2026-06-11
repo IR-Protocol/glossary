@@ -24,4 +24,4 @@ title: What is Humanities-AI Interaction?
 type: essay
 date: 2026-06-10
 order: 1
-term_ids: []
+term_ids: ["IR-HAI-013"]
