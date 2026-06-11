@@ -1,6 +1,7 @@
 {
   "version": "1.0",
-  "last_updated": "2026-06-10",
+  "status": "stable",
+  "last_updated": "2026-06-11",
   "copyright": "国作登字-2026-A-00129903",
   "license": "CC BY-NC-ND 4.0",
   "language_authority": "zh",
@@ -159,8 +160,8 @@
       "term_id": "IR-DP-010",
       "zh": "数字人格",
       "en": "Digital Personality",
-      "definition_zh": "用户在长期使用AI过程中，由其风格偏好、表达习惯与思维模式等记忆数据沉淀形成的数字化表达。数字人格的形成依赖'记忆主权归用户'的架构基础，用户对自己的数字人格拥有完整的查看、导出、迁移、删除与授权权利。它不是技术锁定，而是一种'体验惯性'。",
-      "definition_en": "A digital representation formed by the precipitation of memory data --- such as stylistic preferences, expressive habits, and thinking patterns --- during long-term user-AI interaction. Its formation depends on the 'Memory Sovereignty' architecture. Users have full control. It is not technical lock-in but an 'experience inertia'.",
+      "definition_zh": "用户在长期使用AI过程中，由其风格偏好、表达习惯与思维模式等记忆数据沉淀形成的数字化表达。数字人格的形成依赖'记忆主权归用户'的架构基础，用户对自己的数字人格拥有完整的查看、导出、迁移、删除、授权权利。它不是技术锁定，而是一种'体验惯性'。",
+      "definition_en": "A digital representation formed by the precipitation of memory data such as stylistic preferences, expressive habits, and thinking patterns during long-term user-AI interaction. Its formation depends on the 'Memory Sovereignty' architecture. Users have full control. It is not technical lock-in but an 'experience inertia'.",
       "domain": ["identity", "user-modeling"],
       "relations": [
         {
