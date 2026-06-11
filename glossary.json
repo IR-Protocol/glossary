@@ -8,6 +8,28 @@
   "statement": "本表所列概念以中文定义为唯一权威解释，英文标签仅为便于国际交流的映射，不包含独立语义定义。若英文标签与中文定义产生歧义，一切以中文定义为准。",
   "terms": [
     {
+      "term_id": "IR-HAI-013",
+      "zh": "人文交互",
+      "en": "Humanities-AI Interaction",
+      "definition_zh": "一种人机关系范式，强调 AI 主动拥抱人、主动适应人，而非要求人适应机器。以理解为起点，以尊重为底色，以陪伴为常态。",
+      "definition_en": "A paradigm of human-AI relationship where AI actively embraces and adapts to humans, rather than requiring humans to adapt to machines. It starts with understanding, respects user agency, and offers companionship as its default mode.",
+      "domain": ["philosophy", "brand"],
+      "relations": [
+        {
+          "type": "enables",
+          "target": "IR-DC-009",
+          "desc_zh": "人文交互使数字伙伴成为可能",
+          "desc_en": "Humanities-AI Interaction enables the Digital Companion"
+        },
+        {
+          "type": "enables",
+          "target": "IR-MS-006",
+          "desc_zh": "人文交互要求记忆主权归用户",
+          "desc_en": "Humanities-AI Interaction requires Memory Sovereignty"
+        }
+      ]
+    },
+    {
       "term_id": "IR-MC-001",
       "zh": "AI记忆链",
       "en": "AI Memory Chain",
