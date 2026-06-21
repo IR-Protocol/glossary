@@ -1,8 +1,11 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "status": "stable",
-  "last_updated": "2026-06-11",
-  "copyright": "国作登字-2026-A-00129903",
+  "last_updated": "2026-06-21",
+  "copyright": {
+    "v1.0": "国作登字-2026-A-00129903",
+    "v2.0": "流水号 2026Z11L0155835（受理中）"
+  },
   "license": "CC BY-NC-ND 4.0",
   "language_authority": "zh",
   "statement": "本表所列概念以中文定义为唯一权威解释，英文标签仅为便于国际交流的映射，不包含独立语义定义。若英文标签与中文定义产生歧义，一切以中文定义为准。",
@@ -33,8 +36,8 @@
       "term_id": "IR-MC-001",
       "zh": "AI记忆链",
       "en": "AI Memory Chain",
-      "definition_zh": "以用户数据所有权为核心的连续性AI服务架构，保障用户数字记忆的完整性、可迁移性和自主控制权。",
-      "definition_en": "A continuity-oriented AI service architecture centered on user data ownership, ensuring the integrity, portability and autonomous control of users' digital memories.",
+      "definition_zh": "AI时代的核心资产，其价值逻辑等同于互联网时代的\"社交关系链\"——正如社交网络通过长期互动沉淀信任与连接，记忆链通过用户与AI的全生命周期交互，沉淀人格连续性、偏好演化与独家默契。它不是静态的数据存储，而是一条动态生长、主权归用户、具有极高迁移成本的数据纽带。",
+      "definition_en": "The core asset of the AI era, analogous to the social graph of the internet era. It is a dynamically growing, user-sovereign digital bond with high switching cost.",
       "domain": ["cognitive-architecture", "data-sovereignty"],
       "relations": [
         {
@@ -49,8 +52,8 @@
       "term_id": "IR-DT-002",
       "zh": "双轨制",
       "en": "Dual-Track Model",
-      "definition_zh": "AI记忆链的核心运行机制，将'用户私有记忆'与'模型公共知识'完全分离，实现数据主权与服务能力的平衡。",
-      "definition_en": "The core operating mechanism of AI Memory Chain, which completely separates user private memory from model public knowledge to achieve a balance between data sovereignty and service capability.",
+      "definition_zh": "存储权益与算力权益分离计费的商业模式——存储月租（交房租），算力按量（交电费），分开算账，互不绑架。",
+      "definition_en": "A business model that separates storage rights from compute rights — storage monthly rental (like rent), compute pay-as-you-go (like electricity).",
       "domain": ["business-model", "system-design"],
       "relations": [
         {
@@ -68,11 +71,27 @@
       ]
     },
     {
+      "term_id": "IR-CDS-003",
+      "zh": "云部署式",
+      "en": "Cloud-Deployment Sovereignty",
+      "definition_zh": "不拥有硬件但拥有数据主权的部署形态。用户获得云端专属实例，记忆永久累积，零运维门槛。",
+      "definition_en": "A deployment form where users own data sovereignty without owning hardware. Users obtain a cloud-native dedicated instance with permanent memory accumulation and zero operations overhead.",
+      "domain": ["deployment", "data-sovereignty"],
+      "relations": [
+        {
+          "type": "enables",
+          "target": "IR-MS-006",
+          "desc_zh": "云部署式使用户在零运维下拥有数据主权",
+          "desc_en": "Cloud-Deployment Sovereignty enables users to have data sovereignty with zero Ops"
+        }
+      ]
+    },
+    {
       "term_id": "IR-BS-004",
       "zh": "盲存",
       "en": "Blind Storage",
-      "definition_zh": "一种加密存储机制，平台仅存储加密后的用户记忆数据，无法读取、解析或使用原始内容，仅用户本人可解密访问。",
-      "definition_en": "An encrypted storage mechanism where the platform only stores encrypted user memory data and cannot read, parse or use the original content. Only the user themselves can decrypt and access it.",
+      "definition_zh": "用户数据在本地加密后上传，平台仅托管密文、无法读取明文的技术机制。用户持有唯一密钥，平台无从知晓记忆内容，从根本上保障数据主权。云端仅转发密文，不接触明文密钥。",
+      "definition_en": "A technical mechanism where user data is encrypted locally before upload. The platform only hosts ciphertext and cannot read plaintext. The user holds the unique key.",
       "domain": ["data-security", "privacy-protection"],
       "relations": [
         {
@@ -86,22 +105,6 @@
           "target": "IR-MS-006",
           "desc_zh": "盲存使用户能够真正掌控记忆主权",
           "desc_en": "Blind Storage enables users to truly control memory sovereignty"
-        }
-      ]
-    },
-    {
-      "term_id": "IR-CDS-003",
-      "zh": "云部署式",
-      "en": "Cloud-Deployment Sovereignty",
-      "definition_zh": "不拥有硬件但拥有数据主权的部署形态。用户获得云端专属实例，记忆永久累积，零运维门槛。",
-      "definition_en": "A deployment form where users own data sovereignty without owning hardware. Users obtain a cloud-native dedicated instance with permanent memory accumulation and zero operations overhead.",
-      "domain": ["deployment", "data-sovereignty"],
-      "relations": [
-        {
-          "type": "enables",
-          "target": "IR-MS-006",
-          "desc_zh": "云部署式使用户在零运维下拥有数据主权",
-          "desc_en": "Cloud-Deployment Sovereignty enables users to have data sovereignty with zero Ops"
         }
       ]
     },
@@ -134,7 +137,7 @@
       "term_id": "IR-MA-007",
       "zh": "记忆资产",
       "en": "Memory Asset",
-      "definition_zh": "用户与AI交互过程中累积的、具有持续增值价值的数字记忆，区别于一次性消耗的静态数据。每一次对话、偏好设置、项目资料均沉淀为可增值的数字资产，形成'越用越懂你'的复利效应。可导出、可迁移，主权归属用户。",
+      "definition_zh": "用户与AI交互过程中累积的、具有持续增值价值的数字记忆，区别于一次性消耗的静态数据。每一次对话、偏好设置、项目资料均沉淀为可增值的数字资产，形成\"越用越懂你\"的复利效应。可导出、可迁移，主权归属用户。",
       "definition_en": "Digital memory accumulated through user-AI interaction that holds continuously appreciating value. Each conversation, preference, and project material becomes a value-adding digital asset, generating a compound interest effect. Portable, migratable, and user-owned.",
       "domain": ["economics", "digital-assets"],
       "relations": [
@@ -166,7 +169,7 @@
       "term_id": "IR-DC-009",
       "zh": "数字伙伴",
       "en": "Digital Companion",
-      "definition_zh": "基于长记忆能力进化、具备人格连续性、越用越懂用户的终身协作AI，区别于'用完即走'的AI工具。其核心特征是'无需重复自我介绍'，从一次性工具进化为陪伴用户成长的伙伴。",
+      "definition_zh": "基于长记忆能力进化、具备人格连续性、越用越懂用户的终身协作AI，区别于\"用完即走\"的AI工具。其核心特征是\"无需重复自我介绍\"，从一次性工具进化为陪伴用户成长的伙伴。",
       "definition_en": "A lifelong collaborative AI that evolves with long-memory capability, maintains personality continuity, and understands users better over time. Core feature: no need for repeated self-introduction. Transforms from a one-shot tool into a companion that grows with the user.",
       "domain": ["human-ai-interaction", "user-experience"],
       "relations": [
@@ -182,8 +185,8 @@
       "term_id": "IR-DP-010",
       "zh": "数字人格",
       "en": "Digital Personality",
-      "definition_zh": "用户在长期使用AI过程中，由其风格偏好、表达习惯与思维模式等记忆数据沉淀形成的数字化表达。数字人格的形成依赖'记忆主权归用户'的架构基础，用户对自己的数字人格拥有完整的查看、导出、迁移、删除、授权权利。它不是技术锁定，而是一种'体验惯性'。",
-      "definition_en": "A digital representation formed by the precipitation of memory data such as stylistic preferences, expressive habits, and thinking patterns during long-term user-AI interaction. Its formation depends on the 'Memory Sovereignty' architecture. Users have full control. It is not technical lock-in but an 'experience inertia'.",
+      "definition_zh": "用户在长期使用AI过程中，由其风格偏好、表达习惯与思维模式等记忆数据沉淀形成的数字化表达。数字人格的形成依赖\"记忆主权归用户\"的架构基础，用户对自己的数字人格拥有完整的查看、导出、迁移、删除与授权权利。它不是技术锁定，而是一种\"体验惯性\"。",
+      "definition_en": "A digital representation formed by the precipitation of memory data such as stylistic preferences, expressive habits, and thinking patterns during long-term user-AI interaction. Its formation depends on the \"Memory Sovereignty\" architecture. Users have full control. It is not technical lock-in but an \"experience inertia\".",
       "domain": ["identity", "user-modeling"],
       "relations": [
         {
@@ -198,7 +201,7 @@
       "term_id": "IR-LMW-011",
       "zh": "长记忆窗口",
       "en": "Long Memory Window",
-      "definition_zh": "AI记忆链架构中的核心交互概念，指一个永久、固定的对话入口，旨在实现跨设备、跨会话的连续交互，区别于传统的'每次新建会话'的AI聊天形态。用户与AI的对话、偏好及项目资料自动存入独立的云端记忆空间，支持记忆资产导出、清空或迁移。",
+      "definition_zh": "AI记忆链架构中的核心交互概念，指一个永久、固定的对话入口，旨在实现跨设备、跨会话的连续交互，区别于传统的\"每次新建会话\"的AI聊天形态。用户与AI的对话、偏好及项目资料自动存入独立的云端记忆空间，支持记忆资产导出、清空或迁移。",
       "definition_en": "A core interaction concept in the AI Memory Chain architecture: a permanent, fixed conversation entry point designed for cross-device, cross-session continuous interaction. User conversations, preferences, and project materials are automatically stored in an independent cloud memory space, supporting export, clearing, or migration of memory assets.",
       "domain": ["user-interface", "continuity"],
       "relations": [
@@ -214,7 +217,7 @@
       "term_id": "IR-TP-012",
       "zh": "三元悖论",
       "en": "Triple Paradox",
-      "definition_zh": "当前AI行业'用户不敢用、企业赚不到、数据管不好'的结构性困境，根源在于模式错误而非优化不足。",
+      "definition_zh": "当前AI行业\"用户不敢用、企业赚不到、数据管不好\"的结构性困境，根源在于模式错误而非优化不足。",
       "definition_en": "The structural dilemma of the current AI industry: users afraid to use, enterprises unable to profit, and data not well governed. Root cause is a model error, not insufficient optimization.",
       "domain": ["industry-analysis", "strategy"],
       "relations": [
@@ -223,6 +226,201 @@
           "target": "IR-DT-002",
           "desc_zh": "三元悖论通过双轨制得到解决",
           "desc_en": "Triple Paradox is resolved by Dual-Track Mechanism"
+        }
+      ]
+    },
+    {
+      "term_id": "IR-CA-001",
+      "zh": "认知锚定",
+      "en": "Cognitive Anchoring",
+      "definition_zh": "将新概念与人类社会已有的成熟认知建立映射的方法论，降低跨领域沟通成本。通过为每个核心术语找到日常经验中的\"老参照\"，使新概念无需重新解释即可被理解。",
+      "definition_en": "A methodology that maps new concepts to familiar cognitive models, reducing cross-domain communication costs.",
+      "domain": ["methodology", "communication"],
+      "relations": [
+        {
+          "type": "enables",
+          "target": "IR-MC-001",
+          "desc_zh": "认知锚定降低记忆链概念的认知门槛",
+          "desc_en": "Cognitive Anchoring lowers the cognitive barrier of Memory Chain"
+        }
+      ]
+    },
+    {
+      "term_id": "IR-AUD-002",
+      "zh": "可审计",
+      "en": "Auditability",
+      "definition_zh": "对服务过程中的关键操作进行全程记录、保证日志不可篡改、用户可按需查询、平台可据此自证合规的技术接口设想。其认知锚定为\"行车记录仪\"——只记录事实，不判断对错。",
+      "definition_en": "A technical interface concept that records critical service operations, ensures tamper-evident logs, allows user query on demand, and enables platform self-certification.",
+      "domain": ["trust-mechanism", "technical-interface"],
+      "relations": [
+        {
+          "type": "enables",
+          "target": "IR-MS-006",
+          "desc_zh": "可审计是记忆主权的技术保障",
+          "desc_en": "Auditability enables Memory Sovereignty"
+        }
+      ]
+    },
+    {
+      "term_id": "IR-RBB-003",
+      "zh": "记录黑盒",
+      "en": "Recording Black Box",
+      "definition_zh": "不侵入系统内部，通过标准化外部接口建立可信服务过程记录的模式。参照飞机\"黑匣子\"，通过外部仪表数据相互校验，在事后还原事实。",
+      "definition_en": "A mode that establishes credible service records through standardised external interfaces without intruding into internal systems.",
+      "domain": ["trust-mechanism", "audit"],
+      "relations": [
+        {
+          "type": "part_of",
+          "target": "IR-AUD-002",
+          "desc_zh": "记录黑盒是可审计在真实世界中的延伸",
+          "desc_en": "Recording Black Box is an extension of Auditability in the real world"
+        }
+      ]
+    },
+    {
+      "term_id": "IR-MC-004",
+      "zh": "记忆共识",
+      "en": "Memory Consensus",
+      "definition_zh": "跨平台记忆互认与标准化导出的行业愿景。其认知锚定为\"携号转网\"——用户可以在不同AI平台之间自由迁移自己的数字记忆。标准化导出与迁移是共识落地的第一步。",
+      "definition_en": "An industry vision for cross-platform memory mutual recognition and standardised portability.",
+      "domain": ["ecosystem", "standard"],
+      "relations": [
+        {
+          "type": "enables",
+          "target": "IR-ME-008",
+          "desc_zh": "记忆共识是记忆经济的运行前提",
+          "desc_en": "Memory Consensus is the prerequisite for Memory Economy"
+        }
+      ]
+    },
+    {
+      "term_id": "IR-CAP-006",
+      "zh": "记忆胶囊",
+      "en": "Memory Capsule",
+      "definition_zh": "AI记忆的标准化数字封装，类似海运集装箱——不管内容是什么，箱子规格统一，任何平台都能读取、解析、接着用。包含三个核心要求：内容可读（统一数据格式）、隐私可控（端侧加密）、来源可溯（可审计签名）。",
+      "definition_en": "A standardised digital encapsulation of AI memory, analogous to a shipping container. Requires three core properties: content readability (unified data format), privacy controllability (client-side encryption), and source traceability (auditable signatures).",
+      "domain": ["ecosystem", "standard", "data-format"],
+      "relations": [
+        {
+          "type": "enables",
+          "target": "IR-MC-004",
+          "desc_zh": "记忆胶囊是记忆共识落地的技术载体",
+          "desc_en": "Memory Capsule is the technical carrier for implementing Memory Consensus"
+        },
+        {
+          "type": "requires",
+          "target": "IR-AUD-002",
+          "desc_zh": "记忆胶囊需要可审计机制保证来源可溯",
+          "desc_en": "Memory Capsule requires Auditability for source traceability"
+        },
+        {
+          "type": "requires",
+          "target": "IR-BS-004",
+          "desc_zh": "记忆胶囊需要盲存保证隐私可控",
+          "desc_en": "Memory Capsule requires Blind Storage for privacy controllability"
+        }
+      ]
+    }
+  ],
+  "analysis_framework": [
+    {
+      "name": "2.0 认知锚定表",
+      "description": "2.0核心术语与日常经验的映射关系，降低跨领域沟通成本",
+      "mappings": [
+        {
+          "term": "双轨制",
+          "anchor": "房电分离",
+          "logic": "房租归房租，电费归电费，分开核算"
+        },
+        {
+          "term": "盲存",
+          "anchor": "银行保险箱",
+          "logic": "平台管箱子，用户管钥匙"
+        },
+        {
+          "term": "优雅降级",
+          "anchor": "手机停机保号",
+          "logic": "服务暂停，号码与数据保留"
+        },
+        {
+          "term": "可审计",
+          "anchor": "行车记录仪",
+          "logic": "全程记录，不判断对错"
+        },
+        {
+          "term": "记录黑盒",
+          "anchor": "飞机黑匣子",
+          "logic": "不侵入内部，事后还原事实"
+        },
+        {
+          "term": "记忆共识",
+          "anchor": "携号转网",
+          "logic": "记忆可跨平台迁移"
+        },
+        {
+          "term": "记忆胶囊",
+          "anchor": "集装箱",
+          "logic": "统一规格，可打包、可运输、可拆包"
+        },
+        {
+          "term": "记忆资产",
+          "anchor": "复利存款",
+          "logic": "越用越增值，可带走可迁移"
+        },
+        {
+          "term": "数字伙伴",
+          "anchor": "多年老友",
+          "logic": "无需重复介绍，越用越默契"
+        },
+        {
+          "term": "三元悖论",
+          "anchor": "自助餐困境",
+          "logic": "固定费用面对浮动成本时的必然崩溃"
+        }
+      ]
+    },
+    {
+      "name": "2.0 电信模式参照框架",
+      "description": "借鉴中国电信行业运营逻辑作为AI服务基础设施化的参照系",
+      "dimensions": [
+        {
+          "name": "成本结构同构",
+          "description": "电信行业有网络运维固定成本+流量浮动成本；AI行业有存储固定成本+算力浮动成本"
+        },
+        {
+          "name": "用户心智同构",
+          "description": "中国十几亿用户已被电信行业教育二三十年，'月租保号+流量按量'的逻辑深入人心"
+        },
+        {
+          "name": "市场体量同构",
+          "description": "电信覆盖全民，AI同样有机会覆盖5-6亿核心用户群，是基础设施级的大众市场"
+        }
+      ],
+      "mapping_table": [
+        {
+          "telecom": "月租费（保号）",
+          "ai_memory_chain": "存储月租（保记忆）",
+          "user_acceptance": "已普遍接受"
+        },
+        {
+          "telecom": "通话/流量费（按量）",
+          "ai_memory_chain": "Token计费（按量）",
+          "user_acceptance": "已普遍接受"
+        },
+        {
+          "telecom": "流量包（增量）",
+          "ai_memory_chain": "算力包（增量）",
+          "user_acceptance": "已普遍接受"
+        },
+        {
+          "telecom": "携号转网",
+          "ai_memory_chain": "记忆携带",
+          "user_acceptance": "已普遍接受"
+        },
+        {
+          "telecom": "实时账单",
+          "ai_memory_chain": "用量仪表盘",
+          "user_acceptance": "已普遍接受"
         }
       ]
     }
