@@ -1,10 +1,11 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "status": "stable",
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-07-10",
   "copyright": {
     "v1.0": "国作登字-2026-A-00129903",
-    "v2.0": "流水号 2026Z11L0155835（受理中）"
+    "v2.0": "国作登字-2026-A-00162871",
+    "v3.0": "国作登字-2026-A-00162872"
   },
   "license": "CC BY-NC-ND 4.0",
   "language_authority": "zh",
@@ -72,8 +73,8 @@
     },
     {
       "term_id": "IR-CDS-003",
-      "zh": "云部署式",
-      "en": "Cloud-Deployment Sovereignty",
+      "zh": "云部署式主权",
+      "en": "Cloud-Deployed Sovereignty",
       "definition_zh": "不拥有硬件但拥有数据主权的部署形态。用户获得云端专属实例，记忆永久累积，零运维门槛。",
       "definition_en": "A deployment form where users own data sovereignty without owning hardware. Users obtain a cloud-native dedicated instance with permanent memory accumulation and zero operations overhead.",
       "domain": ["deployment", "data-sovereignty"],
@@ -81,8 +82,8 @@
         {
           "type": "enables",
           "target": "IR-MS-006",
-          "desc_zh": "云部署式使用户在零运维下拥有数据主权",
-          "desc_en": "Cloud-Deployment Sovereignty enables users to have data sovereignty with zero Ops"
+          "desc_zh": "云部署式主权使用户在零运维下拥有数据主权",
+          "desc_en": "Cloud-Deployed Sovereignty enables users to have data sovereignty with zero Ops"
         }
       ]
     },
@@ -320,6 +321,86 @@
           "desc_en": "Memory Capsule requires Blind Storage for privacy controllability"
         }
       ]
+    },
+    {
+      "term_id": "IR-CA-007",
+      "zh": "认知架构",
+      "en": "Cognitive Architecture",
+      "definition_zh": "关于\"可信的AI系统需要具备哪些核心能力模块\"的顶层设计与蓝图。定义精准执行、场境感知、独立判断三大核心模块及其分离原则。它不是对现有大模型的替代，而是对现有系统结构性缺失的补充方案。",
+      "definition_en": "The top-level design of what a trustworthy AI system needs to have under the hood, defining precise execution, contextual awareness, and independent judgment as core modules and the principle of keeping them separate. It is not a replacement for large language models, but a supplement to address structural gaps.",
+      "domain": ["cognitive-architecture", "ai-safety"],
+      "relations": [
+        {
+          "type": "defines",
+          "target": "IR-CA-008",
+          "desc_zh": "认知架构定义认知操作系统",
+          "desc_en": "Cognitive Architecture defines Cognitive Operating System"
+        }
+      ]
+    },
+    {
+      "term_id": "IR-CA-008",
+      "zh": "认知操作系统",
+      "en": "Cognitive Operating System",
+      "definition_zh": "CA的调度实现层，位于算力底座之上、具体应用之下。负责多模态感知融合、资源动态分配、表达约束生成和进化边界管理。它是连接\"模型能做什么\"和\"模型应该怎么做\"的中间层。",
+      "definition_en": "The runtime scheduler that implements CA, sitting above the compute layer and below the application layer. Responsible for multi-modal perception fusion, dynamic resource allocation, constrained expression generation, and evolution boundary management.",
+      "domain": ["cognitive-architecture", "system-design"],
+      "relations": [
+        {
+          "type": "implements",
+          "target": "IR-CA-007",
+          "desc_zh": "认知操作系统实现认知架构",
+          "desc_en": "Cognitive Operating System implements Cognitive Architecture"
+        }
+      ]
+    },
+    {
+      "term_id": "IR-CA-009",
+      "zh": "精准执行",
+      "en": "Precise Execution",
+      "definition_zh": "大模型本身擅长的领域——理解指令、检索知识、生成内容、完成任务。解决\"能不能\"的问题，是系统的能力引擎。认知架构不替代它，而是让它在有序环境中将能力发挥到极致。",
+      "definition_en": "What large language models already excel at — understanding instructions, retrieving knowledge, generating content, completing tasks. It answers the question \"can it\" and is the system's capability engine.",
+      "domain": ["cognitive-architecture", "execution"],
+      "relations": [
+        {
+          "type": "part_of",
+          "target": "IR-CA-007",
+          "desc_zh": "精准执行是认知架构的核心模块之一",
+          "desc_en": "Precise Execution is one of the core modules of Cognitive Architecture"
+        }
+      ]
+    },
+    {
+      "term_id": "IR-CA-010",
+      "zh": "场境感知",
+      "en": "Contextual Awareness",
+      "definition_zh": "AI理解\"此刻发生了什么\"的能力，包括物理空间属性、社交属性、时间压力、情绪状态等多维感知。没有这个能力，AI就像一个不懂看脸色的应答者——能给出正确答案，但不知道该用什么语气、给多少信息、以什么速度回应。",
+      "definition_en": "The AI's ability to understand \"what is happening right now\" — including physical space attributes, social attributes, time pressure, emotional state, and other dimensions of perception.",
+      "domain": ["cognitive-architecture", "perception"],
+      "relations": [
+        {
+          "type": "part_of",
+          "target": "IR-CA-007",
+          "desc_zh": "场境感知是认知架构的核心模块之一",
+          "desc_en": "Contextual Awareness is one of the core modules of Cognitive Architecture"
+        }
+      ]
+    },
+    {
+      "term_id": "IR-CA-011",
+      "zh": "独立判断",
+      "en": "Independent Judgment",
+      "definition_zh": "在任务指令与情感诉求发生冲突时，做出明确优先级取舍的能力。不是\"和稀泥\"，不是\"各退一步\"，而是能够根据当下场景的具体情况，判断什么应该优先、什么可以暂缓、什么方式更合适。",
+      "definition_en": "The ability to make clear priority calls when task instructions and emotional needs conflict. Not a compromise, but a judgment based on the specific context — what comes first, what can wait, what is the right way.",
+      "domain": ["cognitive-architecture", "decision-making"],
+      "relations": [
+        {
+          "type": "part_of",
+          "target": "IR-CA-007",
+          "desc_zh": "独立判断是认知架构的核心模块之一",
+          "desc_en": "Independent Judgment is one of the core modules of Cognitive Architecture"
+        }
+      ]
     }
   ],
   "analysis_framework": [
@@ -422,6 +503,59 @@
           "ai_memory_chain": "用量仪表盘",
           "user_acceptance": "已普遍接受"
         }
+      ]
+    },
+    {
+      "name": "3.0 认知智能参照框架",
+      "description": "认知智能白皮书核心概念的关系框架",
+      "core_concepts": [
+        {
+          "term": "认知架构",
+          "role": "顶层设计",
+          "anchor": "建筑设计图",
+          "logic": "关于'需要什么能力'的蓝图"
+        },
+        {
+          "term": "认知操作系统",
+          "role": "调度实现层",
+          "anchor": "交通调度中心",
+          "logic": "让核心能力协同运转的中间层"
+        },
+        {
+          "term": "精准执行",
+          "role": "能力引擎",
+          "anchor": "发动机",
+          "logic": "解决'能不能'的问题"
+        },
+        {
+          "term": "场境感知",
+          "role": "感知模块",
+          "anchor": "读空气",
+          "logic": "理解'此刻发生了什么'"
+        },
+        {
+          "term": "独立判断",
+          "role": "决策模块",
+          "anchor": "现场指挥官",
+          "logic": "在冲突中做出优先级取舍"
+        }
+      ],
+      "design_principles": [
+        {
+          "principle": "模块分离",
+          "description": "精准执行、场境感知、独立判断三大模块分开设计，避免角色混淆导致决策扭曲"
+        },
+        {
+          "principle": "算力与认知分离",
+          "description": "大模型管'能不能'，CA+COS管'该不该、以什么方式、给多少'"
+        }
+      ],
+      "user_experience_chain": [
+        "用户交互",
+        "→ 场境感知 (此刻是什么情况?)",
+        "→ 独立判断 (什么优先?)",
+        "→ 精准执行 (怎么做?)",
+        "→ 表达生成 (用什么方式?)"
       ]
     }
   ]
