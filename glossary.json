@@ -1,11 +1,13 @@
 {
-  "version": "1.2",
+  "version": "1.3",
   "status": "stable",
-  "last_updated": "2026-07-10",
+  "last_updated": "2026-07",
   "copyright": {
-    "v1.0": "国作登字-2026-A-00129903",
-    "v2.0": "国作登字-2026-A-00162871",
-    "v3.0": "国作登字-2026-A-00162872"
+    "memory_chain_v1.0": "国作登字-2026-A-00129903",
+    "memory_chain_v2.0": "国作登字-2026-A-00162871",
+    "memory_chain_v3.0": "国作登字-2026-A-00221479",
+    "cognitive_intelligence_v1.0": "国作登字-2026-A-00162872",
+    "tripartite_model_v1.0": "国作登字-2026-A-00221480"
   },
   "license": "CC BY-NC-ND 4.0",
   "language_authority": "zh",
@@ -401,6 +403,159 @@
           "desc_en": "Independent Judgment is one of the core modules of Cognitive Architecture"
         }
       ]
+    },
+    {
+      "term_id": "IR-SB-001",
+      "zh": "第二大脑",
+      "en": "Second Brain",
+      "definition_zh": "个人专属AI智能助手，沉淀用户的知识结构、偏好模式、经验积累，成为用户数字能力的外化。换设备无缝接续，使用越久越懂用户。它不是\"被使用的东西\"，而是个人能力的自然延伸。",
+      "definition_en": "A personal AI assistant that accumulates the user's knowledge structure, preference patterns, and experience, becoming an externalization of the user's digital capability. It continues seamlessly across devices and understands the user better over time.",
+      "domain": ["memory-chain", "personal-terminal"],
+      "relations": []
+    },
+    {
+      "term_id": "IR-TEA-002",
+      "zh": "真专属AI",
+      "en": "True Exclusive AI",
+      "definition_zh": "一个真正属于用户的AI，满足四个基本标准：带得走（可一键导出完整记忆文件，迁移到任何平台）、看不到（平台仅托管加密后的密文，无法读取记忆内容）、断不了（算力中断时，记忆依然可访问、可导出）、说得清（每一次关键决策都有可追溯、可核查的记录）。",
+      "definition_en": "An AI that truly belongs to the user, meeting four standards: Portable (one-click export of complete memory), Unreadable (platform only hosts ciphertext), Unbreakable (memory remains accessible when compute is interrupted), Accountable (every key decision has a traceable record).",
+      "domain": ["memory-chain", "data-sovereignty"],
+      "relations": []
+    },
+    {
+      "term_id": "IR-MAUT-003",
+      "zh": "记忆自主权",
+      "en": "Memory Autonomy",
+      "definition_zh": "用户对自身数字记忆拥有五项基本权利：查看权、导出权、迁移权、删除权、授权权。其底线是：可永久记忆，亦可一键遗忘。这是《个人信息保护法》精神在AI长记忆场景下的技术实现方案构想。",
+      "definition_en": "The user's five basic rights over their digital memory: view, export, migrate, delete, and authorize. The bottom line: permanent memory, and one-click forgetting.",
+      "domain": ["memory-chain", "data-rights"],
+      "relations": []
+    },
+    {
+      "term_id": "IR-DPP-004",
+      "zh": "数字护照",
+      "en": "Digital Passport",
+      "definition_zh": "对未来AI记忆形态的一种愿景：AI记忆像一本数字护照，有标准的轮廓，里面装着用户的偏好、项目脉络、知识结构。任何用户授权的AI服务，都可以在获得许可后，快速理解、适应用户。",
+      "definition_en": "A vision of future AI memory: like a digital passport with a standard outline, containing the user's preferences, project context, and knowledge structure. Any authorized AI service can quickly understand and adapt to the user.",
+      "domain": ["memory-chain", "vision"],
+      "relations": []
+    },
+    {
+      "term_id": "IR-TCC-005",
+      "zh": "能力下放第三次循环",
+      "en": "Third Cycle of Capability Decentralization",
+      "definition_zh": "互联网下放的是信息获取能力，移动互联网下放的是表达和商业能力，AI时代下放的是认知和决策能力。每一次能力下放的前提，都是基础设施的商业模式变革。",
+      "definition_en": "The internet decentralized information access; the mobile internet decentralized expression and commercial capability; the AI era decentralizes cognition and decision-making capability. Each cycle is preceded by a business model change in infrastructure.",
+      "domain": ["memory-chain", "industry-analysis"],
+      "relations": []
+    },
+    {
+      "term_id": "IR-CIM-006",
+      "zh": "记忆的复利",
+      "en": "Compound Interest of Memory",
+      "definition_zh": "每一次对话、每一次纠偏、每一次偏好表达，都在沉淀为用户的数字记忆。累积得越多，AI对用户的理解就越深，形成\"越用越懂你、越用越值钱\"的复利效应。",
+      "definition_en": "Every conversation, correction, and expression of preference settles into the user's digital memory. The more it accumulates, the deeper the AI's understanding, forming a compound interest effect.",
+      "domain": ["memory-chain", "user-experience"],
+      "relations": []
+    },
+    {
+      "term_id": "IR-UTA-007",
+      "zh": "焦虑的终极转向",
+      "en": "Ultimate Turn of Anxiety",
+      "definition_zh": "今天人们对AI的焦虑是\"我会不会被替代\"；当专属AI普及后，焦虑会从\"怕被替代\"转变成\"怕弄丢了\"——怕弄丢那个沉淀了多年记忆的\"第二大脑\"。恐惧让人逃避，珍惜让人拥抱。",
+      "definition_en": "Today's anxiety is \"Will I be replaced?\"; when personal AI becomes widespread, anxiety shifts to \"fear of losing\" the Second Brain that has accumulated years of memory. Fear makes people escape; cherishing makes people embrace.",
+      "domain": ["memory-chain", "user-psychology"],
+      "relations": []
+    },
+    {
+      "term_id": "IR-TM-001",
+      "zh": "智能体三角模型",
+      "en": "Tripartite Model of AI Agent",
+      "definition_zh": "意图共鸣科技提出的商用AI智能体构造范式，由通用认知基座、人文交互内核、私有知识域三个构造顶点构成。三个顶点同时具备、相互支撑、缺一不可。",
+      "definition_en": "A commercial AI agent construction paradigm proposed by Intention Resonance Technology, consisting of three construction vertices: General Cognitive Base, Human-Interaction Core, and Private Knowledge Domain. All three are indispensable.",
+      "domain": ["ai-agent", "construction-paradigm"],
+      "relations": []
+    },
+    {
+      "term_id": "IR-GCB-002",
+      "zh": "通用认知基座",
+      "en": "General Cognitive Base",
+      "definition_zh": "依托大模型生态提供的语义理解、推理、生成能力，是智能体运转的先决底座。",
+      "definition_en": "The semantic understanding, reasoning, and generation capabilities provided by the large model ecosystem; the prerequisite foundation for AI agent operation.",
+      "domain": ["ai-agent", "cognitive-base"],
+      "relations": []
+    },
+    {
+      "term_id": "IR-HIC-003",
+      "zh": "人文交互内核",
+      "en": "Human-Interaction Core",
+      "definition_zh": "基于认知智能架构的交互规则体系，赋予智能体分寸感、服务温度与安全边界，是三角模型中被发现并确立为一等架构层的核心维度。包含服务角色与风格体系、情绪响应与引导、边界管控、人机协同、隐私管理、异常处理、透明与可控七大模块。",
+      "definition_en": "An interaction rule system based on cognitive intelligence architecture, giving the AI agent a sense of proportion, service warmth, and safety boundaries. It is the core dimension established as a first-class architectural layer in the Tripartite Model.",
+      "domain": ["ai-agent", "human-interaction"],
+      "relations": []
+    },
+    {
+      "term_id": "IR-PKD-004",
+      "zh": "私有知识域",
+      "en": "Private Knowledge Domain",
+      "definition_zh": "企业/商家自主提供的专属业务知识与规则数据，赋予智能体业务灵魂。",
+      "definition_en": "Exclusive business knowledge and rule data provided by the enterprise/merchant, giving the AI agent a business soul.",
+      "domain": ["ai-agent", "knowledge-domain"],
+      "relations": []
+    },
+    {
+      "term_id": "IR-SFA-005",
+      "zh": "服务型AI智能体",
+      "en": "Service-First AI Agent (SFA)",
+      "definition_zh": "以人文交互内核为一等架构层、以服务交付为最终目标、面向商用前台服务场景的AI智能体。由意图共鸣科技在本白皮书中率先体系化定义并提出。",
+      "definition_en": "An AI agent that takes the Human-Interaction Core as a first-class architectural layer, aims at service delivery as its ultimate goal, and is oriented toward commercial front-office service scenarios. First systematically defined by Intention Resonance Technology.",
+      "domain": ["ai-agent", "service-first"],
+      "relations": []
+    },
+    {
+      "term_id": "IR-FCAL-006",
+      "zh": "一等架构层",
+      "en": "First-Class Architectural Layer",
+      "definition_zh": "在三角模型中，指与通用认知基座、私有知识域享有同等构造地位的核心维度，拥有独立的设计目标、评估标准与工程体系。",
+      "definition_en": "In the Tripartite Model, a core dimension that enjoys equal construction status with the General Cognitive Base and the Private Knowledge Domain, with independent design goals, evaluation criteria, and engineering systems.",
+      "domain": ["ai-agent", "architecture"],
+      "relations": []
+    },
+    {
+      "term_id": "IR-CV-007",
+      "zh": "构造顶点",
+      "en": "Construction Vertex",
+      "definition_zh": "三角模型底面的三个构造要素，即通用认知基座、人文交互内核、私有知识域。三者是智能体的基础构造支柱，缺一不可。",
+      "definition_en": "The three construction elements of the base of the Tripartite Model: General Cognitive Base, Human-Interaction Core, and Private Knowledge Domain. They are the foundational pillars of the AI agent.",
+      "domain": ["ai-agent", "construction-paradigm"],
+      "relations": []
+    },
+    {
+      "term_id": "IR-ST-008",
+      "zh": "触地点",
+      "en": "Service Touchpoint",
+      "definition_zh": "三角模型支架落地时与具体行业场景结合的服务交付点，是三个构造顶点共同支撑的自然产物。其具体形态由行业特性定义，非模型固有维度。",
+      "definition_en": "The service delivery point where the Tripartite Model tripod lands and combines with a specific industry scenario. It is a natural product jointly supported by the three construction vertices.",
+      "domain": ["ai-agent", "industry-landing"],
+      "relations": []
+    },
+    {
+      "term_id": "IR-TVC-009",
+      "zh": "三角校验表",
+      "en": "Tripartite Validation Checklist",
+      "definition_zh": "基于三角模型设计的商用智能体完整度快速评估工具，覆盖通用认知基座、人文交互内核、私有知识域三大维度。",
+      "definition_en": "A quick assessment tool for the completeness of commercial AI agents designed based on the Tripartite Model, covering the three dimensions of General Cognitive Base, Human-Interaction Core, and Private Knowledge Domain.",
+      "domain": ["ai-agent", "evaluation"],
+      "relations": []
+    },
+    {
+      "term_id": "IR-TC-010",
+      "zh": "透明与可控",
+      "en": "Transparency & Controllability",
+      "definition_zh": "确保用户对AI身份知情、对交互过程可追溯、对服务可随时退出的一体化机制，是人文交互内核第七大模块的核心内涵。",
+      "definition_en": "An integrated mechanism ensuring the user's right to know the AI identity, traceability of the interaction process, and the ability to exit the service at any time. It is the core connotation of the seventh module of the Human-Interaction Core.",
+      "domain": ["ai-agent", "human-interaction"],
+      "relations": []
     }
   ],
   "analysis_framework": [
@@ -558,5 +713,13 @@
         "→ 表达生成 (用什么方式?)"
       ]
     }
-  ]
+  ],
+  "terms_count": {
+    "memory_chain_v1.0": 13,
+    "memory_chain_v2.0": 5,
+    "cognitive_intelligence_v1.0": 5,
+    "memory_chain_v3.0": 7,
+    "tripartite_model_v1.0": 10,
+    "total": 40
+  }
 }
